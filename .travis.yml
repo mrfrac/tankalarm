@@ -6,4 +6,4 @@ jobs:
   include:
   - stage: Produce Coverage
     node_js: "10.7.0"
-    script: jest --coverage --coverageReporters=text-lcov | coveralls && rm -rf ./coverage
+    script: yarn test --coverage --coverageReporters=text-lcov | coveralls && rm -rf ./coverage
