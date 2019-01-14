@@ -8,6 +8,6 @@ jobs:
     node_js: "10.7.0"
     script: yarn test --coverage --coverageReporters=text-lcov | coveralls && rm -rf ./coverage
   - stage: Write Database with seeds
-    node_js: "10.7.0",
+    node_js: "10.7.0"
     script: yarn createdb && yarn writeseeds
 
